@@ -12,42 +12,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* similar to html script tag */}
-      <Script src="/sc.js" strategy="lazyOnload"></Script>  
+      {/* <Script src="/sc.js" strategy="lazyOnload"></Script>   */}
 
+      <nav className={styles.mainnav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Conatact</li>
+        </ul>
+      </nav>
 
       <main className={styles.main}>
         <h1 className={styles.title}>Hunting Coder</h1>
 
         <p className={styles.description}>A blog site for coders from coders</p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="blogs">
+          <h2>Popular blogs</h2>
+          <div className="blogItem">
+            <h3>How to learn Javascript in 2022?</h3>
+            <p>Js is the language used to write websites</p>
+          </div>
         </div>
       </main>
 
